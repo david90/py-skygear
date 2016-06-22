@@ -98,7 +98,7 @@ def construct_reply(text):
     info = get_direction_info(start_point, end_point)
 
     if info["status"] == "OK":
-        reply = "OK, it's {} away. It will take you {} to travel via {} from {} to {}. More: {}"
+        reply = "OK, it's {} away. It will take you {} to travel via {} from {} to {}. Map: {}"
         more_link = "https://www.google.com/maps/dir/{}/{}".format(
             urllib.parse.quote(info["start_address"]),
             urllib.parse.quote(info["end_address"])
@@ -111,7 +111,7 @@ def construct_reply(text):
             info["end_address"],
             more_link)
     else:
-        reply = "Oh, sorry. Can you be more exact? (e.g. HK Cyberport)"
+        reply = "Oh, sorry. Can you be more exact? (e.g. From HK Cyberport to Fo Tan)"
 
     print(info)
     return reply
