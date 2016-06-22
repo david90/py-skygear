@@ -1,6 +1,7 @@
 import logging
 import skygear
 import requests
+import urllib
 
 from skygear import static_assets
 from skygear.utils.assets import relative_assets
@@ -99,8 +100,9 @@ def construct_reply(text):
     if info["status"] == "OK":
         reply = "OK, it's {} away. It will take you {} to travel via {} from {} to {}. More: {}"
         more_link = "https://www.google.com/maps/dir/{}/{}".format(
-            info["start_address"],
-            info["end_address"])
+            urllib.parse.quote(info["start_address"]),
+            urllib.parse.quote(info["end_address"]
+        )
         reply = reply.format(
             info["distance"]["text"],
             info["duration"]["text"],
