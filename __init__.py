@@ -96,8 +96,7 @@ def construct_reply(text):
     info = get_direction_info(start_point, end_point)
 
     if info["status"] == "OK":
-        reply = "OK, it's {} away. "+
-        "It will take you {} to travel from {} to {}."
+        reply = "OK, it's {} away. It will take you {} to travel from {} to {}."
         reply = reply.format(
             info["distance"]["text"],
             info["duration"]["text"],
