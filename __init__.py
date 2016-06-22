@@ -6,6 +6,8 @@ from skygear.utils.assets import relative_assets
 from .chat import plugin as chat_plugin
 from .fb_messager import messager_handler
 
+log = logging.getLogger(__name__)
+
 @skygear.op("chima:hi")
 def echo():
     return {"message": "Hello World"}
