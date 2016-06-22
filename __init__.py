@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 
 
 @skygear.op("chima:hi")
-def echo():
+def chima_echo():
     return {"message": "Hello World"}
 
 
