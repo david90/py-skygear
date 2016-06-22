@@ -45,9 +45,7 @@ def echo(evt, postman):
 # Helper
 def get_direction_info(start_point, end_point):
     map_api_key = "AIzaSyCHrkIMXnwvJ8zLVFK0GrAqaxkHQByl1Nk"
-    map_api_endpoint = "https://maps.googleapis.com/"+
-    "maps/api/directions/"+
-    "json?origin={}&destination={}&key={}"
+    map_api_endpoint = "https://maps.googleapis.com/maps/api/directions/json?origin={}&destination={}&key={}"
     map_api_endpoint = map_api_endpoint.format(
         start_point,
         end_point,
