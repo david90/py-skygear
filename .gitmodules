@@ -1,6 +1,6 @@
 [submodule "chat"]
-	path = chat
-url=https://github.com/david90/chat.git
+  path = chat
+  url=https://github.com/david90/chat.git
 [submodule "fb_messager"]
-	path = fb_messager
-	url = https://github.com/SkygearIO/fb_messager.git
+  path = fb_messager
+  url = https://github.com/SkygearIO/fb_messager.git
