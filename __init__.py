@@ -1,3 +1,4 @@
+import skygear
 from skygear import static_assets
 from skygear.utils.assets import relative_assets
 
